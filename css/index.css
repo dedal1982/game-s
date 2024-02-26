@@ -2122,7 +2122,6 @@ button {
 }
 .tab-content__prof {
   max-width: 195px;
-  width: 100%;
   display: flex;
   align-items: center;
   gap: 8px;
