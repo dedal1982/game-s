@@ -37,3 +37,19 @@
   line-height: 32.62px;
   color: #ffffff;
 }
+.x-hundred-top__left-top-info {
+  width: 125px;
+  height: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  border-radius: 44px;
+  background: #302f51;
+}
+.x-hundred-top__left-top-info {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 14.63px;
+  color: #9897a8;
+}
