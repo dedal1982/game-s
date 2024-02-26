@@ -65,20 +65,31 @@
   align-items: center;
   gap: 5px;
 }
-.x-hundred-input-item input {
+.x-hundred-input-item-box {
   width: 245px;
   height: 35px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  cursor: pointer;
-  color: white;
+  border-radius: 5px;
+  padding-left: 20px;
+  padding-right: 10px;
+  box-sizing: border-box;
   background: #504f6c;
 }
-
 .x-hundred-input-item input {
+  max-width: 100px;
+  cursor: pointer;
+  color: white;
+  border: none;
   outline: none;
+  font-family: "Montserrat";
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 14.63px;
+  background: transparent;
 }
+
 .x-hundred-input-item input:focus::-webkit-input-placeholder {
   color: transparent;
 }
@@ -93,4 +104,31 @@
 
 .x-hundred-input-item input:focus:-ms-input-placeholder {
   color: transparent;
+}
+.x-hundred-input-item input::-webkit-input-placeholder {
+  /* WebKit, Blink, Edge */
+  color: #ffffff;
+}
+.x-hundred-input-item input:-moz-placeholder {
+  /* Mozilla Firefox 4 to 18 */
+  color: #ffffff;
+  opacity: 1;
+}
+.x-hundred-input-item input::-moz-placeholder {
+  /* Mozilla Firefox 19+ */
+  color: #ffffff;
+  opacity: 1;
+}
+.x-hundred-input-item input:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: #ffffff;
+}
+.x-hundred-input-item input::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: #ffffff;
+}
+
+.x-hundred-input-item input::placeholder {
+  /* Most modern browsers support this now. */
+  color: #ffffff;
 }
