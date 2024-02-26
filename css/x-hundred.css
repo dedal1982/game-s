@@ -78,7 +78,6 @@
   background: #504f6c;
 }
 .x-hundred-input-item input {
-  max-width: 100px;
   cursor: pointer;
   color: white;
   border: none;
@@ -141,4 +140,28 @@
   align-items: center;
   justify-content: center;
   cursor: pointer;
+}
+.x-hundred-top__left-centr-list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2px;
+}
+.x-hundred-top__left-centr-list li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 45px;
+  height: 35px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-family: "Montserrat";
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 14.63px;
+  color: #ffffff;
+  background: linear-gradient(180deg, #34326a 0%, #36328f 100%);
 }
