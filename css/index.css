@@ -2412,7 +2412,7 @@ tr {
   color: #ffffff;
 }
 @media screen and (max-width: 1150px) {
-  .crach-hidden {
+  .logo {
     display: none;
   }
   .header-cash-mobile {
@@ -2426,5 +2426,8 @@ tr {
   }
   .header__auth-item-btn {
     gap: 10px;
+  }
+  .header__auth-list {
+    left: 0;
   }
 }
