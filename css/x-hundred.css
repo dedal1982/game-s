@@ -132,3 +132,13 @@
   /* Most modern browsers support this now. */
   color: #ffffff;
 }
+.x-hundred-input-item button {
+  background: #504f6c;
+  width: 45px;
+  height: 35px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
