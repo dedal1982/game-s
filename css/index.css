@@ -67,6 +67,8 @@ button {
 @media screen and (max-width: 450px) {
   .container {
     margin: 30px auto 50px;
+    padding-left: 15px;
+    padding-right: 15px;
   }
 }
 .main-section {

@@ -341,10 +341,22 @@
 }
 .bids__item-full {
   width: 282.33px;
-
   display: flex;
   flex-direction: column;
   gap: 10px;
+}
+@media screen and (max-width: 1420px) {
+  .bids__item-full {
+    width: 49%;
+  }
+  .bids__item-box-full {
+    gap: 10px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .bids__item-full {
+    width: 100%;
+  }
 }
 .bids__item-full-top {
   width: 100%;
