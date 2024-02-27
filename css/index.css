@@ -125,7 +125,7 @@ button {
   display: block;
   background: #242347;
   border-radius: 10px 10px 0 0;
-  z-index: 999;
+  z-index: 10;
 }
 .aside-bottom {
   position: absolute;
@@ -135,7 +135,7 @@ button {
   display: block;
   background: #242347;
   border-radius: 0 0 10px 10px;
-  z-index: 999;
+  z-index: 10;
 }
 .swiper-two {
   width: 54px;
