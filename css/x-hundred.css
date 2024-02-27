@@ -419,3 +419,12 @@
 .toggleButton.active {
   transform: rotate(-180deg);
 }
+/*=====win-table-x-hundred=====*/
+.win-table-x-hundred {
+  margin: 0 auto;
+}
+@media screen and (max-width: 1150px) {
+  .win-table-x-hundred {
+    max-width: 100%;
+  }
+}
