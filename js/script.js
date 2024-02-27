@@ -100,11 +100,12 @@ function updateActiveTab() {
 //   itemBox.classList.toggle("active");
 //   itemBoxFull.classList.toggle("active");
 // });
-
+const arrowBtn = document.querySelector(".toggleButton");
 const itemBox = document.querySelector(".bids__item-box");
 const itemBoxFull = document.querySelector(".bids__item-box-full");
 
-document.getElementById("toggleButton").addEventListener("click", () => {
+arrowBtn.addEventListener("click", () => {
   itemBox.classList.toggle("active");
   itemBoxFull.classList.toggle("active");
+  arrowBtn.classList.toggle("active");
 });

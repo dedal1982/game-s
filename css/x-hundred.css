@@ -236,6 +236,7 @@
   flex-wrap: wrap;
   justify-content: space-between;
   gap: 10px;
+  transition: all 0.3s ease-in-out;
 }
 @media screen and (max-width: 600px) {
   .bids__item-box {
@@ -335,6 +336,7 @@
   flex-wrap: wrap;
   justify-content: space-between;
   gap: 20px;
+  transition: all 0.3s ease-in-out;
 }
 .bids__item-box-full.active {
   display: flex;
@@ -410,4 +412,10 @@
 .item-full-count {
   display: flex;
   align-items: center;
+}
+.toggleButton {
+  transition: all 0.3s ease-in-out;
+}
+.toggleButton.active {
+  transform: rotate(-180deg);
 }
