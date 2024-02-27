@@ -1656,7 +1656,7 @@ button {
 @media screen and (max-width: 1150px) {
   .mobile-menu {
     display: none;
-    top: 82px;
+    top: 58px;
     right: 0;
     width: 100%;
     height: 100dvh;
@@ -2040,9 +2040,8 @@ button {
   display: none;
 }
 .win-table {
-  max-width: 927px;
   width: 100%;
-  margin: 0 138px;
+  margin: 0 auto;
   background: #242347;
   border-radius: 10px;
   padding: 20px;
