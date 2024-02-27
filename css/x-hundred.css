@@ -15,7 +15,14 @@
   padding: 20px 20px 20px 20px;
   box-sizing: border-box;
 }
-
+@media screen and (max-width: 767px) {
+  .x-hundred-top {
+    flex-direction: column-reverse;
+  }
+  .x-hundred-top__left {
+    max-width: 100%;
+  }
+}
 .x-hundred-top__left-top {
   width: 100%;
   display: flex;
@@ -186,6 +193,20 @@
   font-size: 12px;
   line-height: 14.63px;
   color: #ffffff;
+}
+@media screen and (max-width: 767px) {
+  .x-hundred-top__left-bottom {
+    justify-content: space-between;
+  }
+  .x-hundred-top__left-bottom button {
+    max-width: 32%;
+  }
+  .x-hundred-top__left-centr-list li {
+    width: 32%;
+  }
+  .x-hundred-input-item-box {
+    width: 93%;
+  }
 }
 .item-x2 {
   background: linear-gradient(90deg, #2858d9 0%, #417bea 100%);
@@ -427,4 +448,91 @@
   .win-table-x-hundred {
     max-width: 100%;
   }
+}
+.aside-button-x-hundred {
+  height: 276px;
+}
+.aside-button-info-x-hundred {
+  margin-top: auto;
+  margin-left: 19px;
+  position: inherit;
+}
+/*=====x-hundred-top__circle=====*/
+@media screen and (max-width: 1150px) {
+  .x-hundred-wrapper {
+    flex-direction: column;
+  }
+}
+.x-hundred-top__circle {
+  width: 572px;
+  height: 380px;
+  padding: 20px;
+  box-sizing: border-box;
+  display: flex;
+  position: relative;
+  background: #242347;
+  border-radius: 10px;
+}
+@media screen and (max-width: 767px) {
+  .x-hundred-top__circle {
+    width: 100%;
+  }
+}
+.x-hundred-top__circle-history {
+  width: 100%;
+  height: 55px;
+  margin-top: auto;
+  background: #ffffff0d;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  padding: 6px 10px;
+  box-sizing: border-box;
+}
+.x-hundred-top__circle-history {
+  color: #9897a8;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 14.63px;
+}
+.progress-history {
+  width: 100%;
+  height: 22px;
+}
+.x-hundred-top__circle-timer {
+  width: 157px;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.x-hundred-top__circle-timer span {
+  display: inline-block;
+  width: 100%;
+  height: 2px;
+  background: #ffffff;
+  box-shadow: 0px 0px 4.300000190734863px 0px #ffffff;
+}
+.x-hundred-top__circle-timer p {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 15.66px;
+  color: #9897a8;
+}
+.x-hundred-top__circle-timer h3 {
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 32.62px;
+  color: #ffffff;
+  margin: 8px auto;
+}
+.x-hundred-top__circle img {
+  width: 50px;
+  height: 35px;
+  position: absolute;
+  top: 71px;
+  left: 50%;
+  transform: translate(-50%);
 }
