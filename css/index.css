@@ -125,7 +125,7 @@ button {
   display: block;
   background: #242347;
   border-radius: 10px 10px 0 0;
-  z-index: 9999;
+  z-index: 999;
 }
 .aside-bottom {
   position: absolute;
@@ -135,7 +135,7 @@ button {
   display: block;
   background: #242347;
   border-radius: 0 0 10px 10px;
-  z-index: 9999;
+  z-index: 999;
 }
 .swiper-two {
   width: 54px;
@@ -676,7 +676,7 @@ button {
   transition: all 0.3s ease-in-out;
 }
 .slots-1-bg:hover .ps-1 {
-  top: -13px;
+  top: 13px;
   transform: scale(1.1);
 }
 .ps-2 {
