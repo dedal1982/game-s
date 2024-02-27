@@ -21,6 +21,7 @@
   }
   .x-hundred-top__left {
     max-width: 100%;
+    padding: 10px;
   }
 }
 .x-hundred-top__left-top {
@@ -237,7 +238,11 @@
   flex-direction: column;
   gap: 20px;
 }
-
+@media screen and (max-width: 767px) {
+  .bids {
+    padding: 10px;
+  }
+}
 .bids__title {
   width: 100%;
   display: flex;
@@ -476,6 +481,7 @@
 @media screen and (max-width: 767px) {
   .x-hundred-top__circle {
     width: 100%;
+    padding: 10px;
   }
 }
 .x-hundred-top__circle-history {
