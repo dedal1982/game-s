@@ -681,6 +681,7 @@
   box-sizing: border-box;
   background: #242347;
   box-shadow: 0px 4px 38.900001525878906px 0px #00000040;
+  pointer-events: none;
 }
 .how-to-play-input-item {
   gap: 3px;
@@ -759,10 +760,14 @@
   gap: 20px;
   border-radius: 5px;
   background: linear-gradient(180deg, #6d63cf 0%, #5244df 100%);
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+.how-to-play__lower-item button:hover {
+  background: linear-gradient(180deg, #34326a 0%, #36328f 100%);
 }
 .how-to-play__lower-item .button-2 {
   flex-direction: row-reverse;
-  background: linear-gradient(180deg, #34326a 0%, #36328f 100%);
 }
 .how-to-play__lower-item .button-2 img {
   transform: rotate(180deg);
