@@ -659,6 +659,11 @@
   align-items: center;
   gap: 40px;
 }
+@media screen and (max-width: 767px) {
+  .how-to-play__container.active:not(:last-child) {
+    gap: 15px;
+  }
+}
 .how-to-play__top {
   width: 100%;
   display: flex;
@@ -780,4 +785,5 @@
 }
 .how-to-play__form-wrapper-2 {
   height: 167.61px;
+  background: url(../img/bg-circle.png);
 }
