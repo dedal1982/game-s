@@ -322,7 +322,7 @@ button {
   width: 100%;
   height: 32%;
   background-color: rgb(29, 28, 64);
-  z-index: 9999;
+  z-index: 10;
 }
 .aside-button-info {
   width: 59px;
