@@ -616,9 +616,11 @@ button {
 .mySwiper {
   width: 100%;
   height: 500px;
+  margin-bottom: 20px;
 }
 @media screen and (max-width: 1420px) {
   .mySwiper {
+    margin-bottom: 10px;
   }
 }
 .myswiper-item {
@@ -1138,6 +1140,7 @@ button {
     width: 100%;
   }
 }
+
 @media screen and (max-width: 450px) {
   .aside-left-wrapper,
   .win-table {
@@ -1186,6 +1189,7 @@ button {
   display: flex;
   flex-direction: column;
 }
+
 .aside-left__top {
   width: 100%;
   display: flex;
