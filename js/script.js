@@ -110,3 +110,37 @@ function updateActiveTab() {
 //   itemBoxFull.classList.toggle("active");
 //   arrowBtn.classList.toggle("active");
 // });
+
+const popupModal = document.querySelector(".how-to-play");
+const popupModalContainer = document.querySelector(".how-to-play__container");
+
+function openPopupModal() {
+  popupModal.classList.add("active");
+  popupModalContainer.classList.add("active");
+}
+
+function closePopupModal() {
+  popupModal.classList.remove("active");
+  popupModalContainer.classList.remove("active");
+}
+
+function closeAllPopupModal() {
+  const containers = document.querySelectorAll(".how-to-play__container");
+  containers.forEach((container) => {
+    container.classList.remove("active");
+    popupModal.classList.remove("active");
+  });
+}
+
+//функция перехода между модальными окнами
+function toggleActiveClass() {
+  const elements = document.querySelectorAll(".how-to-play__container");
+
+  elements.forEach((element) => {
+    if (element.classList.contains("active")) {
+      element.classList.remove("active");
+    } else {
+      element.classList.add("active");
+    }
+  });
+}

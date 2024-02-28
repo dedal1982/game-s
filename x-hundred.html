@@ -59,7 +59,6 @@
           </div>
         </div>
       </header>
-      <!--end header-->
       <!--mobile menu-->
       <div class="mobile-menu">
         <div class="mobile-menu-inner">
@@ -89,7 +88,6 @@
           </ul>
         </div>
       </div>
-      <!--end mobile menu-->
       <!--content-->
       <main class="content">
         <section class="main-section">
@@ -193,7 +191,10 @@
                         <img src="./img/x-100.png" alt="игра" />
                         <h1>x100</h1>
                       </div>
-                      <div class="x-hundred-top__left-top-info">
+                      <div
+                        class="x-hundred-top__left-top-info"
+                        onclick="openPopupModal()"
+                      >
                         <img src="./img/x-info.svg" alt="иконка" />
                         <p>Как играть?</p>
                       </div>
@@ -1146,9 +1147,7 @@
                     </table>
                   </div>
                 </div>
-                <!--end the winnings section-->
               </div>
-              <!--end x-hundred section-->
               <!--level and chat section-->
               <div class="aside-left-wrapper">
                 <div class="aside-left">
@@ -1374,12 +1373,10 @@
                   </div>
                 </div>
               </div>
-              <!--end level and chat section-->
             </div>
           </div>
         </section>
       </main>
-      <!--end content-->
       <!--footer-->
       <footer class="footer">
         <div class="footer__wrapper">
@@ -1411,12 +1408,17 @@
           </ul>
         </div>
       </footer>
-      <!--end footer-->
+      <!--how-to-play-->
       <div class="how-to-play">
+        <!--how-to-play-container-1-->
         <div class="how-to-play__container">
           <div class="how-to-play__top">
             <h2>Как играть?</h2>
-            <img src="./img/Close.svg" alt="закрыть" />
+            <img
+              src="./img/Close.svg"
+              alt="закрыть"
+              onclick="closePopupModal()"
+            />
           </div>
           <div class="how-to-play__form-wrapper">
             <form action="#" class="x-hundred-top__left-centr">
@@ -1463,9 +1465,48 @@
             <span></span>
           </div>
           <div class="how-to-play__lower-item">
-            <button type="button">
+            <button type="button" onclick="toggleActiveClass()">
               <p>Далее</p>
               <img src="./img/low-btn.svg" alt="стрелка" />
+            </button>
+          </div>
+        </div>
+        <!--how-to-play-container-2-->
+        <div class="how-to-play__container">
+          <div class="how-to-play__top">
+            <h2>Как играть?</h2>
+            <img
+              src="./img/Close.svg"
+              alt="закрыть"
+              onclick="closeAllPopupModal()"
+            />
+          </div>
+          <div
+            class="how-to-play__form-wrapper how-to-play__form-wrapper-2"
+          ></div>
+          <div class="how-to-play__text">
+            <h3>Выигрыш</h3>
+            <p>
+              Если выпал сектор, цвет которого совпадает с цветом вашей ставки -
+              вы выиграли!Ставки на остальные цвета проигрывают.
+            </p>
+          </div>
+          <div class="how-to-play__slide how-to-play__slide-2">
+            <span></span>
+            <span></span>
+          </div>
+          <div class="how-to-play__lower-item">
+            <button
+              type="button"
+              class="button-2"
+              onclick="toggleActiveClass()"
+            >
+              <p>Назад</p>
+              <img src="./img/low-btn.svg" alt="стрелка" />
+            </button>
+            <button type="button" onclick="closeAllPopupModal()">
+              <p>Ок</p>
+              <img src="./img/ok-btn.svg" alt="стрелка" />
             </button>
           </div>
         </div>
@@ -1484,7 +1525,6 @@
           </li>
         </ul>
       </section>
-      <!--lower mobile menu-->
     </div>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="js/script.js"></script>
