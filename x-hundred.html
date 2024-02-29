@@ -239,16 +239,16 @@
                     </div>
                     <img src="./img/circle-arrow.svg" alt="стрелка" />
                     <!--таймер-->
-                    <!-- <div class="x-hundred-top__circle-timer">
+                    <div class="x-hundred-top__circle-timer active">
                       <p>До следующего раунда:</p>
                       <h3>00:30</h3>
                       <span class="circle-span"></span>
-                    </div> -->
+                    </div>
                     <!--вращение 10-->
-                    <!-- <div class="x-hundred-top__circle-timer circle-timer-10">
+                    <div class="x-hundred-top__circle-timer circle-timer-10">
                       <p>Вращение</p>
                       <h3>10</h3>
-                    </div> -->
+                    </div>
                     <!--вращение 5-->
                     <div class="x-hundred-top__circle-timer circle-timer-5">
                       <p>Вращение</p>
@@ -257,7 +257,14 @@
                     <!--Победа-->
                     <div class="timer-win-item">
                       <p>Победа</p>
-                      <div class="win-sector win-sector-x2">x2</div>
+                      <div class="win-sector">
+                        <div class="win-sector-x2">x2</div>
+                        <div class="win-sector-x3">x3</div>
+                        <div class="win-sector-x10">x10</div>
+                        <div class="win-sector-x15">x15</div>
+                        <div class="win-sector-x20">x20</div>
+                        <div class="win-sector-x100 active">x100</div>
+                      </div>
                     </div>
                     <div class="x-hundred-top__circle-history-wrapper">
                       <div class="x-hundred-top__circle-history">
@@ -1500,14 +1507,12 @@
               onclick="closeAllPopupModal()"
             />
           </div>
-          <img
-            class="how-to-play__form-wrapper-2"
-            src="./img/ellipse-mob.png"
-            alt="картинка"
-          />
-          <!-- <div
-            class="how-to-play__form-wrapper how-to-play__form-wrapper-2"
-          ></div> -->
+          <div class="how-to-play__form-wrapper how-to-play__form-wrapper-2">
+            <div class="how-to-play__form-wrapper-2-inner">
+              <img src="./img/circle-arrow.svg" alt="стрелка" />
+              <div class="form-wrapper-2-inner-img"></div>
+            </div>
+          </div>
           <div class="how-to-play__text">
             <h3>Выигрыш</h3>
             <p>

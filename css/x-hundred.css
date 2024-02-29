@@ -527,7 +527,7 @@
 }
 .x-hundred-top__circle-timer {
   width: 157px;
-  display: flex;
+  display: none;
   flex-direction: column;
   position: absolute;
   top: 50%;
@@ -824,8 +824,26 @@
   color: #ffffff;
 }
 .how-to-play__form-wrapper-2 {
-  width: 100%;
+  width: 295px;
   height: 167.61px;
+  border-radius: 10px;
+  display: flex;
+  overflow: hidden;
+  padding: 5px 20px 20px 20px;
+}
+
+.how-to-play__form-wrapper-2-inner {
+  width: 255px;
+  height: 135px;
+  position: relative;
+  overflow: hidden;
+}
+.form-wrapper-2-inner-img {
+  width: 255px;
+  height: 255px;
+  border-radius: 50%;
+  background: url(../img/ellipse-circle.png);
+  background-size: cover;
 }
 /*=====circle-wrapper=====*/
 @keyframes rotation {
@@ -853,7 +871,7 @@
 .circle-inner {
   width: 450px;
   height: 450px;
-  border-radius: 50% 50% 0 0;
+  border-radius: 50%;
   display: block;
   background: url(../img/ellipse-circle.png);
   background-size: cover;
@@ -888,7 +906,7 @@
 .circle-timer-10 {
   width: 68px;
   height: 54px;
-  display: flex;
+  display: none;
   flex-direction: column;
 }
 .timer-win-item {
@@ -924,7 +942,39 @@
     height: 25px;
   }
 }
+.how-to-play__form-wrapper-2-inner img {
+  position: absolute;
+  top: 40px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 30px;
+}
 /*===секторы победы===*/
+.win-sector-x2.active,
+.win-sector-x3.active,
+.win-sector-x10.active,
+.win-sector-x15.active,
+.win-sector-x20.active,
+.win-sector-x100.active {
+  display: flex;
+}
+.win-sector-x2,
+.win-sector-x3,
+.win-sector-x10,
+.win-sector-x15,
+.win-sector-x20,
+.win-sector-x100 {
+  width: 120px;
+  height: 30px;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  border-radius: 27.06px;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 19.57px;
+  color: #ffffff;
+}
 .win-sector-x2 {
   background: linear-gradient(90deg, #2858d9 0%, #417bea 100%);
 }
@@ -942,4 +992,12 @@
 }
 .win-sector-x100 {
   background: linear-gradient(90deg, #d04039 0%, #fa7773 100%);
+}
+.x-hundred-top__circle-timer .circle-timer-5 {
+  display: none;
+}
+.x-hundred-top__circle-timer.active,
+.x-hundred-top__circle-timer .circle-timer-10.active,
+.x-hundred-top__circle-timer .circle-timer-5.active {
+  display: flex;
 }
