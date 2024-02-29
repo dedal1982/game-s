@@ -542,6 +542,7 @@
   box-shadow: 0px 0px 4.300000190734863px 0px #ffffff;
 }
 .x-hundred-top__circle p {
+  text-align: center;
   font-weight: 500;
   font-size: 12px;
   line-height: 15.66px;
@@ -882,4 +883,63 @@
     height: 320px;
     margin: 0 auto;
   }
+}
+/*=====circle-timer-10=====*/
+.circle-timer-10 {
+  width: 68px;
+  height: 54px;
+  display: flex;
+  flex-direction: column;
+}
+.timer-win-item {
+  position: absolute;
+  bottom: 69px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 120px;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  align-items: center;
+}
+.win-sector {
+  width: 120px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 27.06px;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 19.57px;
+  color: #ffffff;
+}
+@media screen and (max-width: 450px) {
+  .x-hundred-top__circle-timer {
+    top: 45%;
+  }
+  .win-sector {
+    width: 100px;
+    height: 25px;
+  }
+}
+/*===секторы победы===*/
+.win-sector-x2 {
+  background: linear-gradient(90deg, #2858d9 0%, #417bea 100%);
+}
+.win-sector-x3 {
+  background: linear-gradient(90deg, #e9a43a 0%, #f2c36a 100%);
+}
+.win-sector-x10 {
+  background: linear-gradient(90deg, #479e5d 0%, #4add74 100%);
+}
+.win-sector-x315 {
+  background: linear-gradient(90deg, #6621d7 0%, #813dda 100%);
+}
+.win-sector-x20 {
+  background: linear-gradient(90deg, #e94f28 0%, #f08f57 100%);
+}
+.win-sector-x100 {
+  background: linear-gradient(90deg, #d04039 0%, #fa7773 100%);
 }
