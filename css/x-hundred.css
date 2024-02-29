@@ -805,6 +805,11 @@
 .circle-wrapper {
   margin: 0 auto;
   width: 450px;
+  height: 250px;
+  overflow: hidden;
+}
+.circle-inner {
+  width: 450px;
   height: 450px;
   border-radius: 50% 50% 0 0;
   display: block;
