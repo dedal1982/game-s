@@ -1590,6 +1590,11 @@ button {
   width: 90px;
   cursor: pointer;
   color: #ffffff;
+  transition: all 0.3s ease-in-out;
+}
+.header__in-button:hover {
+  color: #1d1c40;
+  background: #ffffff;
 }
 .header__inner ul {
   font-family: "Montserrat", sans-serif;
