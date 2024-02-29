@@ -785,5 +785,14 @@
 }
 .how-to-play__form-wrapper-2 {
   height: 167.61px;
-  background: url(../img/bg-circle.png);
+}
+/*=====circle-wrapper=====*/
+.circle-wrapper {
+  margin: 0 auto;
+  width: 450px;
+  height: 250px;
+  border-radius: 50% 50% 0 0;
+  display: block;
+  background: url(../img/ellipse-circle.png);
+  background-size: cover;
 }
