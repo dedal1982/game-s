@@ -192,6 +192,11 @@ button {
   margin: 0;
 }
 .swiper-slide-two img {
+  opacity: 0.7;
+  transition: all 0.3s ease-in-out;
+}
+.swiper-slide-two:hover img {
+  opacity: 1;
 }
 .swiper-wrapper {
   z-index: 5 !important;
@@ -1601,12 +1606,16 @@ button {
 }
 .header__list li {
   padding: 5px 8px;
-  background-color: rgb(52, 50, 106);
+  background: linear-gradient(180deg, #34326a 0%, #36328f 100%);
   columns: white;
   border-radius: 5px;
   display: flex;
   gap: 3px;
   box-sizing: border-box;
+  transition: all 0.3s ease-in-out;
+}
+.header__list li:hover {
+  background: linear-gradient(180deg, #6d63cf 0%, #5244df 100%);
 }
 .nav-search {
   display: flex;
@@ -1615,6 +1624,9 @@ button {
 }
 .nav-search.active {
   width: 211px;
+}
+.nav-search.active.active:hover {
+  background: linear-gradient(180deg, #34326a 0%, #36328f 100%);
 }
 .input-search {
   outline: none;
