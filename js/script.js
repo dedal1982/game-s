@@ -81,34 +81,12 @@ function updateActiveTab() {
   });
 }
 
-//menu;
-// function toggleActiveClass() {
-//   const authList = document.querySelector(".header__auth-list");
-//   const authIconBtn = document.querySelector(".header__auth-tringle");
-//   authList.classList.toggle("active");
-//   authIconBtn.classList.toggle("active");
-// }
-
-// document
-//   .querySelector("#myButton")
-//   .addEventListener("click", toggleActiveClass);
-
-// const itemBox = document.querySelector(".bids__item-box");
-// const itemBoxFull = document.querySelector(".bids__item-box-full");
-
-// document.getElementById("toggleButton").addEventListener("click", () => {
-//   itemBox.classList.toggle("active");
-//   itemBoxFull.classList.toggle("active");
-// });
-
-const arrowBtn = document.querySelector(".toggleButton");
-const itemBox = document.querySelector(".bids__item-box");
-const itemBoxFull = document.querySelector(".bids__item-box-full");
-
-arrowBtn.addEventListener("click", () => {
-  itemBox.classList.toggle("active");
-  itemBoxFull.classList.toggle("active");
-  arrowBtn.classList.toggle("active");
+const btnMenuProfile = document.querySelector("#myButton");
+btnMenuProfile.addEventListener("click", () => {
+  const authList = document.querySelector(".header__auth-list");
+  const authIconBtn = document.querySelector(".header__auth-tringle");
+  authList.classList.toggle("active");
+  authIconBtn.classList.toggle("active");
 });
 
 const popupModal = document.querySelector(".how-to-play");
